@@ -1,0 +1,22 @@
+﻿<Window x:Class="BasicCalc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BasicCalc"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FFFFFA92">
+        <Label Content="Enter Number 1:" HorizontalAlignment="Left" Margin="124,66,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label Content="Enter Number 2:" HorizontalAlignment="Left" Margin="124,141,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label Content="Answer:" HorizontalAlignment="Left" Margin="354,259,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <TextBox x:Name="NumberOneInput" HorizontalAlignment="Left" Height="34" Margin="354,74,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="24"/>
+        <TextBox x:Name="NumberTwoInput"  HorizontalAlignment="Left" Height="34" Margin="354,149,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="24"/>
+        <TextBlock x:Name="AnswerBlock" HorizontalAlignment="Left" Margin="525,277,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="34" FontSize="24" Width="150"/>
+        <Button x:Name="PlusButton" Content="+" HorizontalAlignment="Left" Margin="285,210,0,0" VerticalAlignment="Top" Width="35" Height="35" FontSize="50" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="PlusButton_Click" Padding="0,-23, 0,0" Background="#FF288306" Foreground="White"/>
+        <Button x:Name="MinusButton" Content="-" HorizontalAlignment="Left" Margin="337,210,0,0" VerticalAlignment="Top" Width="35" Height="35" FontSize="50" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="MinusButton_Click" Padding="0,-23, 0,0" Background="#FFEE5209" Foreground="White"/>
+        <Button x:Name="MultiplyButton" Content="×" HorizontalAlignment="Left" Margin="389,210,0,0" VerticalAlignment="Top" Width="35" Height="35" FontSize="50" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="MultiplyButton_Click" Padding="0,-23, 0,0" Background="#FF09C4EE" Foreground="White"/>
+        <Button x:Name="DivideButton" Content="÷" HorizontalAlignment="Left" Margin="439,210,0,0" VerticalAlignment="Top" Width="35" Height="35" FontSize="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="DivideButton_Click" Padding="0,-11, 0,0" Background="#FFDC1E49" Foreground="White"/>
+
+    </Grid>
+</Window>
